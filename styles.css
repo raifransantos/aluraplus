@@ -1,0 +1,160 @@
+/* VARIÁVEIS CSS*/
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+/* ESTILIZAÇÃO DO CORPO*/
+body {
+    background-color: var(--cor-de-fundo); /* Cor de fundo*/
+    color: var(--branco-principal); /* Cor das fontes*/
+    font-family: var(--fonte-principal); /* Tipo de fonte*/
+    font-size: 16px; /* Tamanho das fontes*/
+    font-weight: 400; /* Peso das fontes*/
+}
+
+/* RESET: ELIMINAÇÃO DE MARGEM E PADDING*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ESTILIZAÇÃO DOS DEMAIS ELEMENTOS*/
+.principal {
+    background-image: url("img/Background.png"); /* Imagem de fundo*/
+    background-repeat: no-repeat; /* Eliminando repetição da imagem de fundo*/
+    background-size: contain; /* Definido tamanho da imagem: ocupa todo o container, mantendo proporção.*/
+    align-items: center; /*Alinhando itens*/
+    text-align: center; /*Alinhando texto*/
+}
+
+.container {
+    height: 100vh; /* Ocupando o a altura da viewport*/
+    display: grid; /* Definindo display como grid*/
+    grid-template-columns: 50% 50%; /*Dividindo display em duas colunas de 50%*/
+}
+
+.container__botao {
+    background-color: var(--botao-azul); /* Fundo do botão*/
+    border-radius: 5px; /* Arredondando cantos das bordas do botão*/
+    padding: 1em; /* Adicionando espaço entre contéudo e bordas*/
+    color: var(--branco-principal); /* Cor do texto do botão*/
+    display: block;
+    text-decoration: none; /* Eliminando sublinhado do botão*/
+    margin-bottom: 1em; /* Adicionando espaço no margem inferior*/
+}
+
+.botao_secundario {
+    background-color: transparent; /* Deixando botão transparente*/
+    border: 2px solid var(--branco-principal) /* Definindo linhas das bordas*/
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center; /* Justificando contéudo*/
+    list-style-type: none; /* Eliminando estilos padrão*/
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+/* PSEUDO-CLASSES*/
+/* Mudando cor de item ao descansar cursor em cima*/
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+/* Mudando de cor ao clicar em item*/
+.lista__link a:active {
+    color: purple;
+}
+
+/* Mudando cor de item ao descansar cursor em cima*/
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
