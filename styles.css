@@ -1,4 +1,4 @@
-/* VARIÁVEIS CSS*/
+/*Variáveis-------------------------------------*/
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
@@ -7,48 +7,48 @@
     --fonte-principal: 'Inter';
     --botao-azul-efeito: #3c92fa;
 }
-/* ESTILIZAÇÃO DO CORPO*/
+
 body {
-    background-color: var(--cor-de-fundo); /* Cor de fundo*/
-    color: var(--branco-principal); /* Cor das fontes*/
-    font-family: var(--fonte-principal); /* Tipo de fonte*/
-    font-size: 16px; /* Tamanho das fontes*/
-    font-weight: 400; /* Peso das fontes*/
+    background-color: var(--cor-de-fundo); /*Fundo azul escuro*/
+    color: var(--branco-principal); /*cor do texto*/
+    font-family: var(--fonte-principal); /*Tipo de letra*/
+    font-size: 16px; /*Tamanho da fonte*/
+    font-weight: 400; /*Peso da fonte*/
 }
 
-/* RESET: ELIMINAÇÃO DE MARGEM E PADDING*/
+/*Reset------------------------------------*/
 * {
-    margin: 0;
+    margin: 0; 
     padding: 0;
 }
-/* ESTILIZAÇÃO DOS DEMAIS ELEMENTOS*/
+
 .principal {
-    background-image: url("img/Background.png"); /* Imagem de fundo*/
-    background-repeat: no-repeat; /* Eliminando repetição da imagem de fundo*/
-    background-size: contain; /* Definido tamanho da imagem: ocupa todo o container, mantendo proporção.*/
-    align-items: center; /*Alinhando itens*/
-    text-align: center; /*Alinhando texto*/
+    background-image: url("img/Background.png"); /*Imagem dos instrutores*/
+    background-repeat: no-repeat; /*Evita repetição da imagem*/
+    background-size: contain; /*Força imagem ocupar todo o espaço disponível*/
+    align-items: center; /*Alinha no eixo horizontal os elementos ao centro*/
+    text-align: center; /*Alinha textos ao centro*/
 }
 
 .container {
-    height: 100vh; /* Ocupando o a altura da viewport*/
-    display: grid; /* Definindo display como grid*/
-    grid-template-columns: 50% 50%; /*Dividindo display em duas colunas de 50%*/
+    height: 100vh; /*Altura do container*/
+    display: grid; /*Comportamento do container*/
+    grid-template-columns: 50% 50%; /*Divide o container em duas colunas*/
 }
 
 .container__botao {
-    background-color: var(--botao-azul); /* Fundo do botão*/
-    border-radius: 5px; /* Arredondando cantos das bordas do botão*/
-    padding: 1em; /* Adicionando espaço entre contéudo e bordas*/
-    color: var(--branco-principal); /* Cor do texto do botão*/
-    display: block;
-    text-decoration: none; /* Eliminando sublinhado do botão*/
-    margin-bottom: 1em; /* Adicionando espaço no margem inferior*/
+    background-color: var(--botao-azul); /*Cor do botão Assine por 12x...*/
+    border-radius: 5px; /*Bordas do botão arredodada*/
+    padding: 1em; /*Espaço entre conteúdo e as bordas*/
+    color: var(--branco-principal); /*Cor do texto*/
+    display: block; 
+    text-decoration: none; /*Exclusão do sublinhado do texto*/
+    margin-bottom: 1em; /*Aumento da margem inferior do botão*/
 }
 
 .botao_secundario {
-    background-color: transparent; /* Deixando botão transparente*/
-    border: 2px solid var(--branco-principal) /* Definindo linhas das bordas*/
+    background-color: transparent; /*Botão sem cor de fundo*/
+    border: 2px solid var(--branco-principal) /*Bordas brancas*/
 }
 
 .container__aviso {
@@ -70,7 +70,7 @@ body {
 }
 
 .secundario__imagem {
-    width: 80%;
+    width: 80%; /*Largura das imagens*/
 }
 
 .secundario {
@@ -99,9 +99,9 @@ body {
 }
 
 .dispositivos__lista {
-    display: flex;
-    justify-content: center; /* Justificando contéudo*/
-    list-style-type: none; /* Eliminando estilos padrão*/
+    display: flex; /*Elementos lado a lado*/
+    justify-content: center; /*Alinhamentos dos elementos ao centro*/
+    list-style-type: none; /*Exclusão dos pontinhos da lista*/
     margin: 5em 0;
 }
 
@@ -142,18 +142,16 @@ body {
     color: var(--cinza-secundario);
     font-size: 14px;
 }
-/* PSEUDO-CLASSES*/
-/* Mudando cor de item ao descansar cursor em cima*/
+
+/*Texto azul ao descansar cursor*/
 .lista__link a:hover {
     color: var(--botao-azul);
 }
-
-/* Mudando de cor ao clicar em item*/
+/*Texto lilás ao manter link clicado*/
 .lista__link a:active {
     color: purple;
 }
-
-/* Mudando cor de item ao descansar cursor em cima*/
+/*Texto do botão azul-escuro ao descansar cursor encima*/
 .container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
